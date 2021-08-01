@@ -7,9 +7,9 @@ function Footer() {
       <$f>
           <$col1>
               <img src="/imgs/logo.png"/>
-              <br/><br/>
+              <br/>
               <h4>
-                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ.
+                  لورم ایپسوم متن ساختگی از طراحان گرافیک است لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ.
               </h4>
               <br/>
               <$gr>
@@ -37,7 +37,11 @@ function Footer() {
           </$col3>
           <$col4>
               <h3>شبکه های اجتماعی</h3><br/><br/>
-              <img src={"/imgs/Group107.png"}/>
+              <img src={"/imgs/Group 99.png"}/>
+              <img src={"/imgs/Group 101.png"}/>
+              <img src={"/imgs/Group 10.png"}/>
+              <img src={"/imgs/Group 102.png"}/>
+              <img src={"/imgs/Group 100.png"}/>
 
           </$col4>
           <$n>
@@ -54,6 +58,9 @@ export default Footer;
 
 
 const $f=styled.div`
+  h3{
+    font-family: "Kalameh-Bold.ttf";
+  }
   margin-top:10rem;
   background-color:var(--BLUE);
   color: white;
@@ -79,7 +86,7 @@ const $gr=styled.div`
 
 
 const $col2=styled.div`
-  padding:4rem 3rem;
+  padding:6rem 0rem 0px 2rem;
   grid-column:6/7;
   grid-row:1/2;
   text-align:center;
@@ -89,7 +96,7 @@ const $col2=styled.div`
   }
 `
 const $col3=styled.div`
-  padding:4rem 3rem;
+  padding:6rem 1rem 0px 2rem;
   grid-column:7/8;
   grid-row:1/2;
   text-align:center;
@@ -103,10 +110,12 @@ const $col3=styled.div`
 
 
 const $col4=styled.div`
-  padding:4rem 3rem;
+  padding:6rem 3rem 0px 2rem;
   grid-column: 8/12;
   grid-row:1/2;
-  
+  img{
+    margin-left:1rem;
+  }
 `
 
 const $n=styled.div`
@@ -117,6 +126,7 @@ const $n=styled.div`
   background-color: var(--orang);
   font-size:1rem;
   color: var(--BLUE);
+  font-family: "Kalameh-Bold.ttf";
   
 
 `

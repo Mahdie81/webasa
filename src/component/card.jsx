@@ -11,8 +11,8 @@ function Card(props) {
            <div>
                {props.src}
                <br/><br/>
-                <h2>{props.title}</h2>
-               <br/><br/>
+                <h3>{props.title}</h3>
+               <br/>
                <h5>{props.explanation}</h5>
            </div>
 
@@ -24,14 +24,19 @@ function Card(props) {
 export default Card;
 
 const $card=styled.div`
+  
     background-color: white;
     padding:1rem;
-    margin-left:2rem;
-    border-radius:1.5rem;
-    width:14%;
+    margin-left:1rem;
+    border-radius:1rem;
+    width:15%;
     height:60%;
     float:right;
-  
+  h3{
+    font-family: "Kalameh-Bold.ttf";
+    color:var(--title);
+
+  }
     
     `
 function Baste(props) {
@@ -42,7 +47,7 @@ function Baste(props) {
                 <br/><br/>
                 <h2>{props.title}</h2>
                 <br/>
-                <h3>{props.price} </h3>
+                <h3><Seke/>{props.price} </h3>
                 <br/>
                 <hr/>
                 <br/><br/>
@@ -72,9 +77,13 @@ const $baste=styled.div`
     width:25%;
     height:100%;
     float:right;
-    
+ 
   h3{
+    margin: auto;
+    width:50%;
     color: var(--orang);
+    display:flex;
+    justify-content: space-evenly;
   }
     `
 const $b=styled.button`
@@ -115,7 +124,7 @@ const $Article=styled.div`
   border-radius:2rem;
   text-align:right;
   justify-content: center;
-  margin:1rem;
+  margin:1rem 0.5rem;
   
 
   .m{
@@ -123,16 +132,15 @@ const $Article=styled.div`
     height:55%;
   }
   h6{
-   text-align:left;
+    text-align:left;
     margin-left:1rem;
   }
   
   
   h5{
-    margin:1rem;
+    margin:1px 1rem;
     h3{
       font-size:1.3rem;
-      margin-top:10px;
       color:var(--BLUE);
     }
   }

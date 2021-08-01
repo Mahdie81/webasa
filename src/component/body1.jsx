@@ -11,15 +11,19 @@ function Body1() {
 
         <$box>
             <Header/>
+            <$row0><img src="imgs/Group 989.png"/></$row0>
             <$pic1>
                 <img className="m1" src="imgs/Group 105.png"/>
                 <img className="m2" src="imgs/Group 107.png"/>
 
             </$pic1>
             <$row1>
-                <h2>آروم باش!</h2>
-                <h4>این شرکت اولین کمک کننده به توعه با تولید سادگی نامفهوم از صنعت چاپ و با
-                    .استفاده از طراحان گرافیک است</h4>
+                <h3>آروم باش!</h3>
+                <h3>این شرکت اولین کمک کننده به توعه با تولید سادگی نامفهوم از صنعت چاپ و با
+                    .استفاده از طراحان گرافیک است</h3>
+                <h5>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+                    .از طراحان گرافیک است
+                </h5>
             <br/><br/>
             <$table>
 
@@ -67,12 +71,14 @@ function Body1() {
 
             </$row5>
                 <$row6>
-                <$piccard>
+                    <h2>اخبار و مقالات ما را دنبال کنید</h2>
+
+                    <$piccard>
 
                     <img src="imgs/42_cloud_service.png" />
 
                     <h5><h3>تیتر خبر</h3>
-                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد.
                     </h5>
                 </$piccard>
                 <$piccard2>
@@ -116,15 +122,21 @@ const $box = styled.div`
 
   display: grid;
   direction: rtl;
-  grid-template-rows:43rem repeat(5,31rem) 35rem;
+  grid-template-rows:43rem 5rem repeat(5,33rem) 40rem;
   grid-template-columns:[sidebar-s] 8rem [sidebar-b sidebar-e] minmax(6rem, 1fr) [center] repeat(8, [col-s] minmax(min-content, 14rem) [col-e]) [certer-e] minmax(6rem, 1fr) [full-end];
   
 
 `
 
+const $row0 = styled.div`
+  grid-column:2/11;
+  grid-row: 2/3;
+
+`
+
 const $pic1 = styled.div`
   grid-column: 2/6;
-  grid-row: 2/3;
+  grid-row: 3/4;
   display:grid;
   grid-template-columns:4rem 3rem 1rem;
   grid-template-rows:3rem;
@@ -145,45 +157,55 @@ const $pic1 = styled.div`
 const $row1 = styled.div`
   padding:6rem 3rem;
   grid-column:7/11;
-  grid-row: 2/3;
+  grid-row:3/4;
+  
+  h3{
+    font-family: "Kalameh-Bold.ttf";
+  }
 
 `
 const $table = styled.div`
-  grid-column:6/11;
-  grid-row: 2/3;
-  width:15rem;
-  height:4rem;
-  display:flex;
-  justify-content:space-between;
-  justify-items:center;
-div{
-  float: right;
-  width:2rem;
-  height:2rem;
-  border-radius: 1rem;
-  background-color: white;
-  margin-left:2px;
-}
+  grid-column: 6/11;
+  grid-row: 3/4;
+  width:18rem;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+
+  div {
+    float: right;
+    width:1rem;
+    height:1rem;
+    border-radius:4px;
+    background-color: white;
+    margin-left:2px;
+    margin-top:0.7rem;
+    box-shadow: 0 0 0.5rem rgb(104, 107, 108);
+  }
 `
 
 const $row2 = styled.div`
   grid-column:2/11;
-  grid-row:3/4;
+  grid-row:4/5;
   text-align: center;
+  margin:1rem 0px;
   
 `
 
 const $row3 = styled.div`
-  padding-top:15rem;
+  margin-top:10rem;
   grid-column:2/7;
-  grid-row:4/5;
-
+  grid-row:5/6;
+h2{
+  font-family: "Kalameh-Bold.ttf";
+  color:var(--title);
+}
 `
 
 const $pic2 = styled.div`
   margin-right:2rem;
   grid-column:7/12;
-  grid-row:4/5;
+  grid-row:5/6;
   
 `
 const $b=styled.button`
@@ -196,29 +218,38 @@ const $b=styled.button`
     `
 
 const $row4 = styled.div`
-  padding-top:10rem;
-  grid-column:2/11;
-  grid-row:5/6;
-  text-align: center;
-  `
-const $row5=styled.div`
-
-  padding-top:10rem;
+  margin-top:5rem;
   grid-column:2/11;
   grid-row:6/7;
   text-align: center;
-    
+  h2{
+    font-family: "Kalameh-Bold.ttf";
+    color:var(--title);
+  }
+  
+  `
+const $row5=styled.div`
+  grid-column:2/11;
+  grid-row:7/8;
+  text-align: center;
     `
 
 const $row6=styled.div`
-  padding:0rem 5rem;
-  grid-column:1/11;
-  grid-row:7/8;
+  margin-top:5rem;
+  grid-column:2/11;
+  grid-row:8/9;
   text-align: center;
   display: grid;
-  grid-template-columns:repeat(4,24%);
+  grid-template-columns:repeat(4,23%);
   grid-template-rows:55% 45%;
   grid-column-gap:1rem;
+  h2{
+    font-family: "Kalameh-Bold.ttf";
+    color:var(--title);
+    grid-row:1/2;
+    grid-column:1/5;
+    margin-top:-5rem;
+  }
     `
 
 
@@ -235,15 +266,18 @@ const $piccard=styled.div`
   
   
   h5{
-    margin:10px;
+    margin:4px 10px;
     h3{
       font-size:1.5rem;
       color:var(--BLUE);
+      
+        font-family: "Kalameh-Bold.ttf";
+        color:var(--title);
     }
   }
   img{
     width:100%;
-    height:60%;
+    height:50%;
   }
   
     `

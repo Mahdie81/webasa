@@ -2,11 +2,13 @@
   direction: rtl;
 }
 :root{
-  --c-black:hsla(0, 0%, 11%, 1);
-  --dark-white:hsla(0, 0%, 88%, 1);
+
   --BLUE:#004C88;
   --orang:#F18500;
-  --gra-radial:radial-gradient(var(--c-black),var(--c--white));
+  --dark-white:#E9E9E9;
+  --title:#425562;
+
+
 }
 
 *,
@@ -17,14 +19,8 @@
   box-sizing: inherit;
 }
 
-@font-face {
-  font-family: "LMN Yekan";
-  src:  local("LMN Yekan.ttf") ,
-  url("./fonts/LMN Yekan.ttf") format("truetype");
-  font-style: normal;
-}
 
 body{
-  font-family:"LMN Yekan.ttf","sans-serif";
+  font-family:"Kalameh-Thin.ttf","sans-serif";
   background-color:var(--dark-white);
 }

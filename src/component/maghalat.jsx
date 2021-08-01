@@ -83,7 +83,7 @@ function Maghalat () {
         <Article classaName="img5" src="/imgs/082347e726846e23d4e45d76c9bca179.png" title="طراح شو" explanation="آموزش ایجاد طرح گرافیکی سایت در فتوشاپ، تبدیل طرح گرافیکی به قالب وردپرسی و ووکامرسی"/>
         <Article classaName="img5" src="/imgs/082347e726846e23d4e45d76c9bca179.png" title="طراح شو" explanation="آموزش ایجاد طرح گرافیکی سایت در فتوشاپ، تبدیل طرح گرافیکی به قالب وردپرسی و ووکامرسی"/>
 
-
+            <$hashiye/>
 
       </$box>
   );
@@ -95,16 +95,22 @@ const $box=styled.div`
   margin:2rem;
   text-align: center;
   display: grid;
-  grid-template-columns:repeat(4,22%);
+  grid-template-columns:5rem repeat(4,21%);
   grid-template-rows:10rem repeat(4,22rem);
   grid-column-gap:1rem;
   direction:rtl;
   
   
 `
+const $hashiye=styled.div`
+  grid-row:1/6;
+  grid-column:1/2;
+
+
+`
 const $side1=styled.div`
     grid-row:1/2;
-    grid-column:1/5;
+    grid-column:2/6;
     text-align:right;
     margin:auto 1rem;
   h2{
@@ -124,7 +130,7 @@ const $side2=styled.div`
     width:1fr;
     border-radius:1.5rem;
     grid-row:2/3;
-    grid-column:1/2;
+    grid-column:2/3;
     background-color: white;
     margin:1rem;
     
@@ -165,9 +171,9 @@ const $side3=styled.div`
     height:30%;
     border-radius:1.5rem;
     grid-row:2/4;
-    grid-column:1/2;
+    grid-column:2/3;
     background-color: white;
-    margin:60% 1rem 1rem 1rem;
+    margin:65% 1rem 1rem 1rem;
   
     
     
@@ -248,9 +254,9 @@ const  $side4=styled.div`
     height:65%;
     border-radius:1.5rem;
     grid-row:3/4;
-    grid-column:1/2;
+    grid-column:2/3;
     background-color: white;
-    margin:30% 1rem 1rem 1rem;
+    margin:35% 1rem 1rem 1rem;
   
   select{
     padding:3px 10px;
@@ -270,6 +276,6 @@ const  $side5=styled.div`
     height:65%;
     border-radius:1.5rem;
     grid-row:4/6;
-    grid-column:1/2;
+    grid-column:2/3;
     margin:25% 1rem 1rem 1rem;
   `

@@ -7,6 +7,38 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@font-face {
+  font-family: "Kalameh-Black.ttf";
+  src:  local("Kalameh-Black.ttf")
+  ,url("./fonts/Kalameh-Black.ttf")  format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Kalameh-Bold.ttf";
+  src:  local("Kalameh-Bold.ttf")
+  ,url("./fonts/Kalameh-Bold.ttf")  format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Kalameh-Regular.ttf";
+  src:  local("Kalameh-Regular.ttf")
+  ,url("./fonts/Kalameh-Regular.ttf")  format("truetype");
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "Kalameh-Thin.ttf";
+  src:  local("Kalameh-Thin.ttf")
+  ,url("./fonts/Kalameh-Thin.ttf")  format("truetype");
+  font-style: normal;
+}
+
+
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

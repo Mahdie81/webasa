@@ -46,7 +46,7 @@ const $A=styled.div`
     margin-right:2rem;
     font-weight: bold;
     font-size:1rem;
-    font-family:"LMN Yekan.ttf";
+    font-family:"Kalameh-Bold.ttf";
   }
 
 `
@@ -62,7 +62,7 @@ const $sabt=styled.button`
     border-color: white;
     color: white;
     background-color:var(--BLUE);
-    font-family:inherit ;
+    font-family:"Kalameh-Bold.ttf";
     
     `
 

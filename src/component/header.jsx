@@ -34,6 +34,7 @@ function Header () {
 export default Header;
 
 const $d=styled.div`
+  font-family:inherit;
   grid-column:1/12;
   grid-row:1/2;
   background-color:var(--BLUE);
@@ -64,12 +65,17 @@ const $d=styled.div`
 
 
 const $t=styled.div`
+  
+    font-family:inherit;
     margin-top:18rem;
     margin-left: 5rem;
     z-index: 44;
     grid-column:2/7;
     grid-row:2/3;
     color: white;
+  h2{
+    font-family: "Kalameh-Bold.ttf";
+  }
     `
 const $b=styled.button`
   padding:10px 30px;
@@ -77,6 +83,7 @@ const $b=styled.button`
   border: none;
   color: white;
   background-color:var(--orang);
+  font-family: "Kalameh-Bold.ttf";
     
     `
 
