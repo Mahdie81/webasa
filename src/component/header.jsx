@@ -14,13 +14,17 @@ function Header () {
 
 
             <$t>
-                <h2>قدرت دادن مقاله شما با ما</h2>
-                <h4>این راست نیست که هرچه عاشق‌ تر باشی بهتر درک می‌کنی. همه‌ی آنچه عشق از من می‌ خواهد</h4>
+                <h1>وب آسا</h1>
+                <h2> برترین شرکت طراحی وب سایت و خدمات سئو در قم</h2>
+                <h4>
+                    ما به کسب و کارها در مسیر توسعه و نوآفرینی خود در فضای آنلاین
+                    کمک میکنیم.
+                </h4>
                 <br/>
-                <$b>شروع کنید</$b>
+                <$b>تکمیل فرم</$b>
             </$t>
             <$p>
-                <img  src="imgs/Group99.png"/>
+                <img className="m0" src="imgs/Group99.png"/>
                 <img className="m1" src="imgs/Group100.png"/>
                 <img className="m2" src="imgs/Group102.png"/>
                 <img className="m3" src="imgs/Rectangle6.png"/>
@@ -75,6 +79,13 @@ const $t=styled.div`
     color: white;
   h2{
     font-family: "Kalameh-Bold.ttf";
+
+
+    @media only screen and (max-width:75em){
+      font-size:1rem;
+    }
+
+
   }
     `
 const $b=styled.button`
@@ -94,20 +105,45 @@ const $p=styled.div`
   grid-template-columns:2rem 2rem 1rem;
   grid-template-rows:1rem 2rem 1rem;
   padding:10px 70px;
-  
   z-index:20;
+  @media only screen and (max-width:75em){
+    grid-column:1/12 ;
+    grid-row: 2/3;
+    width:80%;
+    height:20%;
+  }
+    .m0{
+      @media only screen and (max-width:75em){
+        width:16rem;
+        height:17rem;
+      }
+    }
+    
+  
     .m1{
       grid-column:1/2 ;
       grid-row: 8/10;
+      @media only screen and (max-width:75em){
+        display:none;
+      }
+   
+      
     }
   .m2{
     grid-column:7/8 ;
     grid-row:2/4;
+    @media only screen and (max-width:75em){
+      display:none;
+    }
+   
   }
   .m3{
     margin-right:-20px;
     grid-column:1/2 ;
     grid-row:4/5;
+    @media only screen and (max-width:75em){
+      display:none;
+    }
   }
     `
 

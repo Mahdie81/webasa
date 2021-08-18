@@ -58,11 +58,14 @@ function Maghaletaki () {
 
            <h4 className="label">نظر خود را با ما در میان بگذارید</h4>
            <$nazarat2>
-               <input placeholder="نوشته خود را اینجا وارد کنید"/>
-               <br/><br/><br/>
-
+               <input  className="email" placeholder="ایمیل  خود را اینجا وارد کنید..." id="email"/>
+               <input  className="name" placeholder="نام  خود را اینجا وارد کنید..." id="name"/>
+               <br/><br/>
+               <input placeholder="نوشته خود را اینجا وارد کنید..." id="idea"/>
+               <br/><br/>
+               <$b2>ارسال نظر</$b2>
            </$nazarat2>
-           <$b2>ارسال نظر</$b2>
+
 
            <$side1>
                 <h2>عنوان های مرتبط</h2>
@@ -169,9 +172,7 @@ const  $nazarat=styled.div`
 const $b=styled.button`
   align-self:start;
   width:4rem;
-  height: 1rem;
-  padding:10px 30px;
-  border-radius:10px;
+  height:2rem;
   border:none;
   background-color:var(--orang);
   
@@ -179,29 +180,38 @@ const $b=styled.button`
     `
 
 const  $nazarat2=styled.div`
-    padding:1rem;
-    border-radius:1.5rem;
     grid-row:6/7;
     grid-column:3/4;
-    background-color: white;
     height:20% ;
     margin-top:11rem;
   
+  .name{
+    width:45%;
+  }
+  
+  .email{
+    width:45%;
+    margin-left:1rem;
+
+  }
+  
   input{
+    padding:0.5% 2%;
+    background-color: white;
+    border-radius:1.5rem;
     height:90%;
-    width: 90%;
+    width:96%;
     border: none;
+    
+   
   }
 
 `
 
 const $b2=styled.button`
-  align-self:start;
+  
   width:4rem;
-  height: 1rem;
-  grid-row:7/8;
-  grid-column:3/4;
-  padding:10px 30px;
+  height:2rem;
   border-radius:10px;
   border:none;
   background-color:var(--orang);

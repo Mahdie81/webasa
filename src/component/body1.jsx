@@ -5,6 +5,10 @@ import {Baste} from "./card";
 import Header from "./header";
 import {ReactComponent as News} from "../assets/Group 106.svg";
 import {ReactComponent as Simple} from "../assets/Component 62.svg";
+import SimpleImageSlider from "react-simple-image-slider";
+import Imageslider from "./slider";
+import "./csses/slider.css"
+
 
 function Body1() {
     return (
@@ -18,39 +22,66 @@ function Body1() {
 
             </$pic1>
             <$row1>
-                <h3>آروم باش!</h3>
-                <h3>این شرکت اولین کمک کننده به توعه با تولید سادگی نامفهوم از صنعت چاپ و با
-                    .استفاده از طراحان گرافیک است</h3>
-                <h5>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
-                    .از طراحان گرافیک است
+                <h2>خدمات وب سایت</h2>
+                <h4> ما در وب آسا با تیم های حرفه ای قادر هستیم هر گونه پروژه مارکتینگ، سئو، طراحی و هر
+                    پیاده سازی صفحات وب را به حرفه انجام دهیم</h4>
+                <br/><h5>
+                    ای که ما در وب آسا انجام می شودنمونه ای از خدمات حرفه
                 </h5>
             <br/><br/>
             <$table>
 
-                <div/><h3>نویسنده خبره</h3>
-                <div/><h3>نویسنده خبره</h3>
+                <div/><h4>دیجیتال مارکتینگ</h4>
+                <div/><h4>طراحی و پیاده سازی فرونت وب سایت</h4>
             </$table>
             <$table>
-                <div/><h3>نویسنده خبره</h3>
-                <div/><h3>نویسنده خبره</h3>
+                <div/><h4>سئو و تولید محتوا</h4>
+                <div/><h4>پیاده سازی بک اند وب سایت</h4>
             </$table>
 
             </$row1>
             <$row2>
-                <h2>خدمات ما</h2>
+                <h2>وب آسا در یک نگاه</h2>
                 <br/>
-                <Card src={<News/>} title={"اخبار"} explanation={"لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است"}/>
-                <Card src={<News/>} title={"شرکت"} explanation={"لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است"}/>
-                <Card src={<News/>} title={"سئو"} explanation={"لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است"}/>
-                <Card src={<News/>} title={"نوشتن"} explanation={"لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است"}/>
-                <Card src={<News/>} title={"اخبار"} explanation={"لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است"}/>
+                <Card src={<News/>} title={"سایت پیاده سازی وب"}
+                      explanation={"در پیاده سازی وب سایت" +
+                      "و پس از Ux,Ui نیازمند طراحی\n" +
+                      "طراحی نیازمند پیاده سازی فایل\n" +
+                      "کد و قرار دادن آن بر روی سرور\n" +
+                      "و استفاده کاربران است."}/>
+                <Card src={<News/>} title={"سایتپیاده سازی وب"}
+                      explanation={"مارکتینگ به معنای فروش و\n" +
+                      "بازاریابی محصولات به صورت\n" +
+                      "فیزیکی و دیجیتال مارکتینگ به\n" +
+                      "معنای بازاریابی محصول به\n" +
+                      "صورت دیجیتالی است."}/>
+                <Card src={<News/>} title={"آکادمی"}
+                      explanation={"بهینه سازی برای موتور های\n" +
+                      "ترجستجو یا به تعریفی روشن\n" +
+                      "هموار سازی راه رسیدن به وب\n" +
+                      "سایت ما برای کاربران در\n" +
+                      "موتورهای جستجو می گویند."}/>
+                <Card src={<News/>} title={" فرم های درخواست"}
+                      explanation={"بهینه سازی برای موتور های\n" +
+                      "ترجستجو یا به تعریفی روشن\n" +
+                      "هموار سازی راه رسیدن به وب\n" +
+                      "سایت ما برای کاربران در\n" +
+                      "موتورهای جستجو می گویند."}/>
+                <Card src={<News/>} title={"مقالات"}
+                      explanation={"هر یک از خدمات اراده شده،\n" +
+                      "دارای مقالاتی در رابطه با\n" +
+                      "آسا در آنچگونگی فعالیت وب\n" +
+                      "زمینه میباشد که باعث شفاف\n" +
+                      "سازی می شود."}/>
             </$row2>
 
             <$row3>
-                <h2>مقالات خود را با ما تهیه کنید</h2>
+                <h2>اتوماسیون مشتریان وب آسا، احاطه کامل بر روی پروژه</h2>
                 <h4>
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
-                    .از طراحان گرافیک است لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و استفاده از طراحان گرافیک است.
+                    دو مورد از بزرگترین مشکلاتی که کارفرمان با آن مواجه هستند، عدم تحویل به موقع پروژه و عدم
+                    ،مانیتورینگ پروژه ها هستند.<br/>
+                    ما در وب آسا پس از شناخت این نیاز اقدام به برطرف کردن آن کرده و پس از بررسی های بسیار اقدام به
+                    .طراحی اتوماسیون تحت وب برای سهولت کارفرمایان عزیز کرده است
                 </h4>
                 <br/>
                 <$b>seccesfully</$b>
@@ -68,6 +99,10 @@ function Body1() {
 
             </$row4>
             <$row5>
+                <h2>مشتری های ما چه نظراتی دارند؟</h2>
+                <div className="carousel">
+                    <Imageslider/>
+                </div>
 
             </$row5>
                 <$row6>
@@ -78,7 +113,7 @@ function Body1() {
                     <img src="imgs/42_cloud_service.png" />
 
                     <h5><h3>تیتر خبر</h3>
-                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد.
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبدو سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد.
                     </h5>
                 </$piccard>
                 <$piccard2>
@@ -100,7 +135,7 @@ function Body1() {
                 <img src="imgs/40294ba01e017648ae480654c36adf02.png" />
 
                 <h5><h3>تیتر خبر</h3>
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.و سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبدو سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد.
                 </h5>
             </$piccard4>
                     <$piccard5>
@@ -122,7 +157,7 @@ const $box = styled.div`
 
   display: grid;
   direction: rtl;
-  grid-template-rows:43rem 5rem repeat(5,33rem) 40rem;
+  grid-template-rows:43rem 5rem repeat(2,34rem) repeat(2,38rem) repeat(2,45rem);
   grid-template-columns:[sidebar-s] 8rem [sidebar-b sidebar-e] minmax(6rem, 1fr) [center] repeat(8, [col-s] minmax(min-content, 14rem) [col-e]) [certer-e] minmax(6rem, 1fr) [full-end];
   
 
@@ -156,29 +191,31 @@ const $pic1 = styled.div`
 
 const $row1 = styled.div`
   padding:6rem 3rem;
-  grid-column:7/11;
+  grid-column:8/11;
   grid-row:3/4;
   
-  h3{
+  h2,h4{
     font-family: "Kalameh-Bold.ttf";
   }
 
 `
 const $table = styled.div`
-  grid-column: 6/11;
-  grid-row: 3/4;
-  width:18rem;
+
+  width:30rem;
   height: 4rem;
   display: flex;
-  justify-content: space-between;
+  
+  h4{
+    margin:1rem;
+    font-family:"Kalameh-Bold.ttf";
 
+  }
   div {
     float: right;
-    width:1rem;
-    height:1rem;
-    border-radius:4px;
+    width:2rem;
+    height:2rem;
+    border-radius:5px;
     background-color: white;
-    margin-left:2px;
     margin-top:0.7rem;
     box-shadow: 0 0 0.5rem rgb(104, 107, 108);
   }
@@ -194,7 +231,7 @@ const $row2 = styled.div`
 
 const $row3 = styled.div`
   margin-top:10rem;
-  grid-column:2/7;
+  grid-column:2/8;
   grid-row:5/6;
 h2{
   font-family: "Kalameh-Bold.ttf";
@@ -203,8 +240,8 @@ h2{
 `
 
 const $pic2 = styled.div`
-  margin-right:2rem;
-  grid-column:7/12;
+  margin-right:1rem;
+  grid-column:8/12;
   grid-row:5/6;
   
 `
@@ -218,7 +255,8 @@ const $b=styled.button`
     `
 
 const $row4 = styled.div`
-  margin-top:5rem;
+  margin-top:3rem;
+  height:80%;
   grid-column:2/11;
   grid-row:6/7;
   text-align: center;
@@ -229,9 +267,19 @@ const $row4 = styled.div`
   
   `
 const $row5=styled.div`
+  margin:13rem 2rem;
   grid-column:2/11;
   grid-row:7/8;
   text-align: center;
+  h2{
+    
+    font-family: "Kalameh-Bold.ttf";
+    color:var(--title);
+    margin-bottom:-1.5rem;
+    text-align: left;
+    margin-left:10rem;
+  }
+  
     `
 
 const $row6=styled.div`
@@ -277,7 +325,7 @@ const $piccard=styled.div`
   }
   img{
     width:100%;
-    height:50%;
+    height:45%;
   }
   
     `
@@ -301,6 +349,6 @@ const $piccard5=styled($piccard)`
   margin-top:1rem;
   grid-column:2/4;
   grid-row:2/3;
-  height:90%;
+  height:95%;
 
 `

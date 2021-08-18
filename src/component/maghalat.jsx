@@ -12,16 +12,17 @@ function Maghalat () {
 
         </$side1>
         <$side2>
-            <h2><pre>جست وجو           <SearchIcon/></pre></h2>
-            <br/><hr/>
+
+            <h3><$labels>جست وجو<SearchIcon/></$labels></h3>
+            <hr/>
             <$search>
             <input type="text" placeholder=" نام دوره مورد نظر را وارد کنید..."/>
             <button>بگرد</button>
             </$search>
         </$side2>
         <$side3>
-            <h2><pre>دسته بندی           <TableChartIcon/></pre></h2>
-            <br/><hr/>
+            <h3><$labels>دسته بندی نتایج<TableChartIcon/></$labels></h3>
+            <hr/>
             <div id="main-menu">
                 <ul>
                     <li><a >منوی مادر</a>
@@ -55,8 +56,8 @@ function Maghalat () {
         </$side3>
 
           <$side4>
-              <h2><pre>فیلتر              <img src="/imgs/iconfinder_Filter_Funnel_4781834.png"/></pre></h2>
-              <br/><hr/>
+              <h3> <$labels>فیلتر  <img src="/imgs/iconfinder_Filter_Funnel_4781834.png"/></$labels></h3>
+              <hr/>
               <br/>
               <select id="software">
                   <option value="">نرم افزار</option>
@@ -95,8 +96,8 @@ const $box=styled.div`
   margin:2rem;
   text-align: center;
   display: grid;
-  grid-template-columns:5rem repeat(4,21%);
-  grid-template-rows:10rem repeat(4,22rem);
+  grid-template-columns:5rem 24% repeat(3,20%);
+  grid-template-rows:10rem repeat(4,23rem);
   grid-column-gap:1rem;
   direction:rtl;
   
@@ -123,6 +124,12 @@ const $side1=styled.div`
     }
   }
     `
+const $labels=styled.div`
+  display: flex;
+  justify-content: space-between;
+  font-family: inherit;
+
+`
 
 const $side2=styled.div`
     padding:1rem;
@@ -143,20 +150,18 @@ const $side2=styled.div`
 const $search=styled.div`
   display:grid;
   grid-template-columns:68% 32%;
-  
+  margin:1rem 1px;
   input{
     grid-column:1/2;
     border:none;
-    padding:0rem;
     height:3rem;
 
   }
   button{
-   
-
+    border-style: solid;
     margin:10px;
-    border-radius:1rem;
-    padding:0.6rem;
+    border-radius:0.5rem;
+    padding:0.2rem 0.6rem;
     color: var(--orang);
     border-color:var(--orang);
     background-color: white;
@@ -173,8 +178,8 @@ const $side3=styled.div`
     grid-row:2/4;
     grid-column:2/3;
     background-color: white;
-    margin:65% 1rem 1rem 1rem;
-  
+    margin:60% 1rem 1rem 1rem;
+   
     
     
   h2{
@@ -257,20 +262,29 @@ const  $side4=styled.div`
     grid-column:2/3;
     background-color: white;
     margin:35% 1rem 1rem 1rem;
+  h3{
+    img{
+      margin:7px 0px;
+    }
+  }
   
   select{
-    padding:3px 10px;
+    padding:3px 5px;
     border-color:darkgray;
-    border-width:3px;
-    border-radius:0.5rem;
+    border-width:1px;
+    border-radius:1rem;
     margin:0.5rem 0px 1rem 0px;
     width:90%;
     height:18%;
-    font-size:1rem;
+    font-size:90%;
     font-weight:bold;
+    font-family: inherit;
   }
     
     `
+
+
+
 const  $side5=styled.div`
     padding:1rem;
     height:65%;

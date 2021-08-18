@@ -36,7 +36,7 @@ function Footer() {
               </h4>
           </$col3>
           <$col4>
-              <h3>شبکه های اجتماعی</h3><br/><br/>
+              <h3>شبکه های اجتماعی</h3><br/>
               <img src={"/imgs/Group 99.png"}/>
               <img src={"/imgs/Group 101.png"}/>
               <img src={"/imgs/Group 10.png"}/>
@@ -86,7 +86,7 @@ const $gr=styled.div`
 
 
 const $col2=styled.div`
-  padding:6rem 0rem 0px 2rem;
+  padding:5rem 0rem 0px 2rem;
   grid-column:6/7;
   grid-row:1/2;
   text-align:center;
@@ -96,7 +96,7 @@ const $col2=styled.div`
   }
 `
 const $col3=styled.div`
-  padding:6rem 1rem 0px 2rem;
+  padding:5rem 1rem 0px 2rem;
   grid-column:7/8;
   grid-row:1/2;
   text-align:center;
@@ -110,7 +110,7 @@ const $col3=styled.div`
 
 
 const $col4=styled.div`
-  padding:6rem 3rem 0px 2rem;
+  padding:5rem 3rem 0px 2rem;
   grid-column: 8/12;
   grid-row:1/2;
   img{

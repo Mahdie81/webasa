@@ -59,7 +59,7 @@ function Baste(props) {
                     <CheckCircleIcon/>{props.option.c}
                 </h4>
             </div>
-            <br/>
+            <br/><br/>
             <$b>buy it</$b>
         </$baste>
 
@@ -133,7 +133,7 @@ const $Article=styled.div`
   }
   h6{
     text-align:left;
-    margin-left:1rem;
+    margin-left:2rem;
   }
   
   

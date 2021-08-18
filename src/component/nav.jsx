@@ -71,5 +71,17 @@ const $logo=styled.span`
   grid-row:1/2;
   z-index:33;
 
+  @media only screen and (max-width:75em){
+  margin-right:2rem;
+  }
+  
+  img{
+    @media only screen and (max-width:75em){
+      width:5rem;
+      height:5rem;
+      
+    }
+  }
+  
 
 `
