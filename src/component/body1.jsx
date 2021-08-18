@@ -240,7 +240,7 @@ h2{
 `
 
 const $pic2 = styled.div`
-  margin-right:1rem;
+  margin-right:8rem;
   grid-column:8/12;
   grid-row:5/6;
   
